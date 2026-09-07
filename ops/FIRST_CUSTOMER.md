@@ -1,31 +1,14 @@
-# First customer funnel
+# First-sale test — live
 
-Customer: Bulgarian sole trader / shop / service guy who needs a document today.
-Pain: Word blank from 2014 still says лв. Needs euro PDF now.
-Product: Стокова разписка or разходен касов ордер.
-Offer: fill free, clean PDF 1,99 € incl. VAT, no account.
-Channel: Facebook groups for счетоводители / майстори / малък бизнес + existing Google queries.
+Customer: Bulgarian sole trader / small shop who already searches стокова разписка or касов ордер.
+Problem: Word бланка still in лв., needs a PDF today.
+Market: BG only for this test.
+Channel: existing Google clicks + one Facebook post already sent.
+Landing: https://docs.prima16.com/documents/stokova-razpiska?utm_source=facebook&utm_medium=organic&utm_campaign=first_sale
+Product: clean стокова PDF.
+Offer: same document they just filled. 1.99 EUR total, no account.
+CTA: Чист PDF за клиент.
+Pay: Whop, inclusive tax.
+Measure: Whop payment + Vercel event payment_started / payment_completed.
 
-## Facebook / Groups — copy now
-
-Заглавие: Стокова разписка в евро, онлайн, без Word
-
-Текст:
-От 1 януари касовите ордери и стоковите разписки трябва да са в евро. Старите Word бланки все още пишат лв.
-
-Направих онлайн генератор — попълваш от телефона, сваляш PDF. Без регистрация.
-
-Стокова: https://docs.prima16.com/documents/stokova-razpiska
-Разходен касов ордер: https://docs.prima16.com/obraztsi/razhoden-kasov-order
-
-Чистият файл без воден знак е 1,99 € еднократно. Ако само ти трябва за лична употреба — безплатният с знак става.
-
-## Reddit r/bulgaria — copy
-
-Title: Online generator for стокова разписка / касов ордер in EUR
-
-Same body, less sell. Ask if anyone still uses BGN templates.
-
-## Do not post
-
-BoardNight. Household Cash Book. English invoices. "16 documents". AI slop videos.
+Do not add a second country until this path records one paid event.
