@@ -12,16 +12,25 @@ async function api(path, opts) {
 
 function render(data) {
   document.getElementById('stamp').textContent = new Date(data.checkedAt).toLocaleString('bg-BG');
+  const n = data.nextBestAction || {};
+  document.getElementById('next').innerHTML =
+    '<p><strong>' + (n.title || '—') + '</strong></p>' +
+    '<p class="lead">' + (n.why || '') + '</p>' +
+    (n.href ? '<p><a class="btn" href="' + n.href + '" target="_blank" rel="noopener">Отвори</a></p>' : '');
   document.getElementById('health').innerHTML = '<table class="data"><tr><th>URL</th><th>ms</th><th></th></tr>' +
     data.health.map(h => '<tr><td><span class="status-dot ' + (h.ok ? 'up' : 'down') + '"></span><a href="' + h.url + '">' + h.name + '</a></td><td>' + (h.ms ?? '—') + '</td><td>' + (h.ok ? h.status : (h.error || 'down')) + '</td></tr>').join('') + '</table>';
   document.getElementById('products').innerHTML = '<table class="data"><tr><th>Име</th><th>Статус</th><th>Каса</th></tr>' +
     data.products.map(p => '<tr><td>' + p.name + '</td><td>' + p.status + '</td><td>' + p.money + '</td></tr>').join('') + '</table>';
   const m = data.revenue || {};
   document.getElementById('money').innerHTML =
-    '<p>Paddle: ' + (m.paddle || 'няма ключ') + '</p>' +
-    '<p>Gumroad: ' + (m.gumroad || 'няма ключ') + '</p>' +
-    '<p>Whop: ' + (m.whop || 'няма ключ') + '</p>' +
-    (m.configured ? '' : '<p>Числа не се измисляват. Ключове в Vercel: PADDLE_API_KEY, GUMROAD_ACCESS_TOKEN, WHOP_API_KEY.</p>');
+    '<p>Whop: ' + (m.whop || 'unavailable') + '</p>' +
+    '<p>Gumroad: ' + (m.gumroad || 'unavailable') + '</p>' +
+    '<p>Paddle: ' + (m.paddle || 'retired') + '</p>' +
+    '<p>' + (m.note || '') + '</p>';
+  const miss = data.unavailable || [];
+  document.getElementById('missing').innerHTML = miss.length
+    ? '<ul>' + miss.map(x => '<li>' + x + '</li>').join('') + '</ul>'
+    : '<p>—</p>';
 }
 
 async function boot() {
