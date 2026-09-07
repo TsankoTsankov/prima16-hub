@@ -1,17 +1,13 @@
 # NEXT BEST ACTION
 
-Updated: 7 September 2026.
+Updated: 7 September 2026 evening.
 
 ## Do this one thing
 
-**Finish Whop payout onboarding (KYC) so the 1.99 € test and future sales can leave Whop and reach the bank.**
+**Open https://whop.com/checkout/plan_5JGBRYwBOs0Tx from Bulgaria and confirm the price is €1.99, not BGN/лв.**
 
-Open: https://whop.com/dashboard/biz_7dpwuua5eEX7UJ/
+Adaptive pricing is now off on all four plans. If checkout still shows lev, hard-refresh or try a private window. If it still converts, screenshot it — that is a Whop locale bug, not a Prima16 price.
 
-Why this, not SEO, not BoardNight, not a new generator: checkout already takes a card. Payout is inactive. Without payout there is no profit, only a ledger inside Whop.
+After that is green, the next code job is the GSC cluster already ranking: разходен / приходен касов ордер (бланка PDF + онлайн + в евро).
 
-Success: dashboard shows standard payout active and a payout method that accepts EUR/BG.
-
-Failure: still “inactive” after the forms — write what Whop asked for into `ops/HUMAN_SETUP_REQUIRED.md` and stop. Do not build another storefront.
-
-After this is green, the next action becomes: one Bulgarian SEO page that already ranks or almost ranks (GSC), not a new market.
+Do not start BoardNight. Do not add AU/UK invoices.

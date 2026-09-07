@@ -1,22 +1,29 @@
 # BUSINESS SCORECARD
 
-Week of 7 September 2026. Unavailable ≠ zero. Do not invent.
+GSC property: docs.prima16.com. Export 7 Sep 2026. Filter: Web, last 3 months.
 
 | Metric | Value | Source |
 |---|---|---|
-| Hub up | yes | HTTP 200 Vercel |
-| Docs up | yes | HTTP 200 Vercel |
-| Extras up | yes | HTTP 200 Vercel |
-| Household listing up | yes | Gumroad 200 on typo slug |
-| Dokumenti checkout | Whop hosted, founder test passed | founder 7 Sep |
-| Payments in bank | unknown | payout inactive |
-| Revenue | unavailable | no server key / no GSC |
-| Traffic | unavailable | no GSC export |
-| Tool usage | unavailable | client-only events |
-| Repeat usage | unavailable | localStorage |
-| Checkout starts | unavailable | analytics not centralized |
-| Conversion | unavailable | |
-| Maintenance cost | ~0 € | Hobby + Squarespace domain already owned |
-| Infra cost | 0 € / Hobby | |
+| Clicks (BG) | 44 | GSC Countries |
+| Impressions (BG) | 653 | GSC Countries |
+| CTR (BG) | 6.74% | GSC |
+| Avg position (BG) | 18.7 | GSC |
+| Other countries | noise (US 4 impr, UK 1) | GSC |
+| Desktop / mobile clicks | 39 / 5 | GSC |
+| Whop payments listed via API | 0 | payments_list empty |
+| Checkout currency | EUR plans, adaptive pricing OFF as of 7 Sep 19:23 UTC | Whop API |
+| Payout | operator says set up | founder |
+| Infra | Hobby €0 | |
 
-Next update: paste GSC 28-day queries + whether Whop payout is active.
+## Pages that already make the money path
+
+| Page | Clicks | Impr | Pos |
+|---|---|---|---|
+| /documents/stokova-razpiska | 15 | 146 | 9.6 |
+| /obraztsi/razhoden-kasov-order | 8 | 104 | 12.7 |
+| /obraztsi/prihoden-kasov-order | 7 | 88 | 12.1 |
+| /documents/razhoden-kasov-order | 5 | 55 | 17 |
+| /documents/prihoden-kasov-order | 5 | 48 | 18 |
+| /documents/paten-list | 0 | 110 | 52 |
+
+Пътен лист has impressions and no clicks. Leave it until cash orders and стокова are on page 1.

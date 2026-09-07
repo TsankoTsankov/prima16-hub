@@ -1,45 +1,23 @@
 # HUMAN SETUP REQUIRED
 
-Do not send passwords into chat.
+## Done
 
-## 1. Whop payout
+- Whop payout setup (operator, 7 Sep evening).
+- Docs + hub redeploy attempted (verify Git SHA, not just the Redeploy button).
+- Adaptive pricing turned off on all four plans via API.
 
-- Service: Whop
-- Purpose: get 1.99 € into the bank
-- Account: Prima16 `biz_7dpwuua5eEX7UJ`
-- You: complete payout / KYC in the dashboard
-- After: tell this chat “payout active” or paste the error Whop shows (no secrets)
+## Still you
 
-## 2. Redeploy docs
+### 1. Confirm EUR checkout
 
-- Service: Vercel project `prima16-docs`
-- Purpose: ship `/plateno` + Whop legal copy
-- You: Dashboard → prima16-docs → Redeploy latest `main`
-- After: open https://docs.prima16.com/en/terms and confirm it says Whop, not Paddle
+Open https://whop.com/checkout/plan_5JGBRYwBOs0Tx from your phone on mobile data in Bulgaria. Price must be €1.99. If you still see лв, screenshot.
 
-## 3. Admin password
+### 2. Deploy current Git main, not an old snapshot
 
-- Service: Vercel project `prima16-hub`
-- Env: `ADMIN_PASSWORD` (required), optional `ADMIN_SECRET`
-- You: set env, redeploy, open https://www.prima16.com/admin/
-- Optional: attach domain `admin.prima16.com` on the **hub** project
+Vercel → project → Deployments. The production SHA for docs must include commits after `c0f1b9c` (EN hub Whop copy) and `08ba453` (/plateno). If production SHA is older, use Deploy → Promote the latest `main` build, or disconnect Lovable and connect TsankoTsankov/prima16-docs-toolkit.
 
-## 4. Rotate Whop API key
+Same check for hub: production must contain `/ops` and the Extras free card.
 
-- Why: owner key appeared in an old chat file
-- You: Whop → revoke / create new key
-- Where the new key may live: Vercel hub **server** env `WHOP_API_KEY` only, if we wire a payment list. Never in frontend, never in git.
+### 3. Not this week
 
-## 5. Search Console snapshot
-
-- Purpose: pick the one BG query to reinforce
-- You: export last 28 days for docs.prima16.com (queries + pages) and drop the file here or paste top 10
-
-## 6. Whop return URL on all four products
-
-- Required value: `https://docs.prima16.com/plateno`
-- You: confirm in each Whop product settings
-
-## Not required this week
-
-Stripe, new domains, Etsy 16 €, Notion, Linear, paid ads, BoardNight Whop products.
+Do not rotate the Whop key (your call). Do not change ADMIN_PASSWORD (your call).
