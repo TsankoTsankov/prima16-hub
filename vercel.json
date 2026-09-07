@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "has": [{ "type": "host", "value": "admin.prima16.com" }], "destination": "/admin/index.html" },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "admin.prima16.com" }], "destination": "/admin/$1" }
+  ]
 }
