@@ -11,8 +11,8 @@ const TARGETS = [
 const PRODUCTS = [
   { name: 'Документи', status: 'live', money: 'Paddle 1,99 / 4,99 / 6,99 / 19,99 €' },
   { name: 'Household Cash Book', status: 'live', money: 'Gumroad 24 €' },
+  { name: 'BoardNight', status: 'files ready; Whop store not created', money: 'Whop $29 / $29 / $9 planned' },
   { name: 'Prima16 Extras', status: 'spec only', money: '—' },
-  { name: 'BoardNight', status: 'files, no store', money: '—' },
   { name: 'RenoBudget', status: 'planned', money: '—' },
   { name: 'GEO Checker', status: 'planned', money: '—' }
 ];
@@ -37,9 +37,16 @@ module.exports = async (req, res) => {
   }
   const health = await Promise.all(TARGETS.map(async t => ({ name: t.name, ...(await ping(t.url)) })));
   const revenue = {
-    configured: Boolean(process.env.PADDLE_API_KEY || process.env.GUMROAD_ACCESS_TOKEN),
-    paddle: process.env.PADDLE_API_KEY ? 'key present — live list not wired yet' : null,
-    gumroad: process.env.GUMROAD_ACCESS_TOKEN ? 'key present — live list not wired yet' : null
+    configured: Boolean(
+      process.env.PADDLE_API_KEY ||
+      process.env.GUMROAD_ACCESS_TOKEN ||
+      process.env.WHOP_API_KEY
+    ),
+    paddle: process.env.PADDLE_API_KEY ? 'key present — list not wired' : null,
+    gumroad: process.env.GUMROAD_ACCESS_TOKEN ? 'key present — list not wired' : null,
+    whop: process.env.WHOP_API_KEY
+      ? 'key present — no live BoardNight products yet'
+      : 'no key; storefront not live'
   };
   res.setHeader('Cache-Control', 'no-store');
   res.status(200).json({ checkedAt: new Date().toISOString(), health, products: PRODUCTS, revenue });

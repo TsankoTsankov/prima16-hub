@@ -16,10 +16,12 @@ function render(data) {
     data.health.map(h => '<tr><td><span class="status-dot ' + (h.ok ? 'up' : 'down') + '"></span><a href="' + h.url + '">' + h.name + '</a></td><td>' + (h.ms ?? '—') + '</td><td>' + (h.ok ? h.status : (h.error || 'down')) + '</td></tr>').join('') + '</table>';
   document.getElementById('products').innerHTML = '<table class="data"><tr><th>Име</th><th>Статус</th><th>Каса</th></tr>' +
     data.products.map(p => '<tr><td>' + p.name + '</td><td>' + p.status + '</td><td>' + p.money + '</td></tr>').join('') + '</table>';
-  const m = data.revenue;
-  document.getElementById('money').textContent = m.configured
-    ? ('Paddle конфигуриран: ' + (m.paddle || '—') + '. Gumroad: ' + (m.gumroad || '—'))
-    : 'API ключове няма. Числа не се измисляват. Сложи PADDLE_API_KEY и/или GUMROAD_ACCESS_TOKEN във Vercel.';
+  const m = data.revenue || {};
+  document.getElementById('money').innerHTML =
+    '<p>Paddle: ' + (m.paddle || 'няма ключ') + '</p>' +
+    '<p>Gumroad: ' + (m.gumroad || 'няма ключ') + '</p>' +
+    '<p>Whop: ' + (m.whop || 'няма ключ') + '</p>' +
+    (m.configured ? '' : '<p>Числа не се измисляват. Ключове в Vercel: PADDLE_API_KEY, GUMROAD_ACCESS_TOKEN, WHOP_API_KEY.</p>');
 }
 
 async function boot() {

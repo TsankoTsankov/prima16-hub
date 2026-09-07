@@ -12,7 +12,7 @@
   <nav class="top"><div class="mark">Prima16 Admin</div><button class="btn ghost" id="out" type="button">Изход</button></nav>
   <div id="login">
     <h1>Вход</h1>
-    <p class="lead">Само за оператора. Паролата е в Vercel env <span class="sans">ADMIN_PASSWORD</span>.</p>
+    <p class="lead">Парола: Vercel env ADMIN_PASSWORD.</p>
     <p><input id="pw" type="password" autocomplete="current-password" placeholder="Парола"></p>
     <p><button class="btn" id="go" type="button">Влез</button></p>
     <p id="err" style="color:var(--bad)"></p>
@@ -20,21 +20,17 @@
   <div id="dash" hidden>
     <h1>Състояние</h1>
     <p class="lead" id="stamp"></p>
-    <article class="card">
-      <div class="tag">Живи URL</div>
-      <h2>Здраве</h2>
-      <div id="health"></div>
-    </article>
-    <article class="card">
-      <div class="tag">Продукти</div>
-      <h2>Каталог</h2>
-      <div id="products"></div>
-    </article>
+    <article class="card"><div class="tag">URL</div><h2>Здраве</h2><div id="health"></div></article>
+    <article class="card"><div class="tag">Продукти</div><h2>Каталог</h2><div id="products"></div></article>
     <article class="card">
       <div class="tag">Каса</div>
       <h2>Приходи</h2>
-      <p id="money"></p>
-      <p><a href="https://vendors.paddle.com" target="_blank" rel="noopener">Paddle dashboard</a> · <a href="https://gumroad.com/login" target="_blank" rel="noopener">Gumroad</a></p>
+      <div id="money"></div>
+      <p>
+        <a href="https://vendors.paddle.com" target="_blank" rel="noopener">Paddle</a> ·
+        <a href="https://gumroad.com/login" target="_blank" rel="noopener">Gumroad</a> ·
+        <a href="https://whop.com/sell" target="_blank" rel="noopener">Whop</a>
+      </p>
     </article>
   </div>
 </div>
