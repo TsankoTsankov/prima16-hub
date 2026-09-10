@@ -1,3 +1,1 @@
-# Next best action
-
-Open ops/EVERYTHING_LEFT.md. Do P0 tonight. Sales still 0.
+still zero payments, keep pointing Facebook at stokova
