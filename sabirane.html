@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Законна лихва калкулатор 2026 евро — Prima16 Събиране</title>
+<meta name="description" content="Безплатен калкулатор за законна лихва за забава 2026: ЕЦБ + 8 пр.п., /360, евро. Пакетът с ексел стек и две писма е 29 €.">
+<link rel="canonical" href="https://prima16.com/sabirane">
+<link rel="stylesheet" href="/css/brand.css">
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+<nav class="top">
+  <div class="mark">Prima16</div>
+  <div><a href="/">Начало</a> · <a href="https://docs.prima16.com/">Документи</a></div>
+</nav>
+<p class="tag">Безплатен калкулатор · пакет 29 €</p>
+<h1>Законна лихва за забавена фактура, в евро.</h1>
+<p class="lead">Една сума — тук. Няколко вземания + две готови писма — в пакета за 29&nbsp;€.</p>
+
+<article class="card">
+  <h2>Сметнете едно вземане</h2>
+  <p class="sans" style="font-size:14px;color:var(--muted)">Ставка по подразбиране: ЕЦБ 2,15% + 8 пр.п. = 10,15% годишно, /360. Смени ЕЦБ, ако е друга.</p>
+  <p class="sans"><label>Главница € <input id="p" type="text" inputmode="decimal" value="1000" style="max-width:140px"></label></p>
+  <p class="sans"><label>Падеж <input id="due" type="date" style="max-width:180px"></label></p>
+  <p class="sans"><label>Към дата <input id="asof" type="date" style="max-width:180px"></label></p>
+  <p class="sans"><label>ЕЦБ ОПР % <input id="ecb" type="text" inputmode="decimal" value="2.15" style="max-width:100px"></label></p>
+  <p id="out" class="lead"></p>
+  <a class="btn" href="https://whop.com/checkout/plan_P4IkPDQiNsuSF">Вземи пакета — 29 €</a>
+  <a class="btn ghost" href="https://docs.prima16.com/documents/stokova-razpiska">Или стокова / касов ордер</a>
+</article>
+
+<article class="card">
+  <h2>Какво е в пакета</h2>
+  <ul>
+    <li>Excel стек за до 30 вземания, суми в евро</li>
+    <li>Писмо 1 — напомняне</li>
+    <li>Писмо 2 — формална покана за доброволно изпълнение</li>
+  </ul>
+  <p>Не е правна консултация. Не е за лихви към НАП. 30-дневна гаранция.</p>
+</article>
+
+<article class="card">
+  <h2>Как се смята</h2>
+  <p>Лихва = главница × (ЕЦБ + 8 пр.п.) × дни / 360. Дните са от падежа до избраната дата. Провери текущата ставка на ЕЦБ преди да изпратиш писмо.</p>
+</article>
+
+<footer class="site">
+  <p><a href="/">Prima16</a> · <a href="https://docs.prima16.com/usloviya">Условия</a> · tsanko@prima16.com</p>
+</footer>
+</div>
+<script>
+function daysBetween(a,b){var t=24*60*60*1000;return Math.max(0,Math.round((b-a)/t));}
+function num(id){return parseFloat(String(document.getElementById(id).value).replace(',','.'))||0;}
+function fmt(n){return n.toLocaleString('bg-BG',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function run(){
+  var p=num('p'), ecb=num('ecb')/100, rate=ecb+0.08;
+  var due=document.getElementById('due').value;
+  var asof=document.getElementById('asof').value;
+  if(!due||!asof){document.getElementById('out').textContent='Избери падеж и дата.';return;}
+  var d=daysBetween(new Date(due), new Date(asof));
+  var interest=p*rate*d/360;
+  document.getElementById('out').innerHTML=d+' дни · ставка '+(rate*100).toFixed(2)+'% · лихва <strong>'+fmt(interest)+' €</strong> · общо <strong>'+fmt(p+interest)+' €</strong>';
+}
+['p','due','asof','ecb'].forEach(function(id){document.getElementById(id).addEventListener('input',run);document.getElementById(id).addEventListener('change',run);});
+(function(){var t=new Date();document.getElementById('asof').value=t.toISOString().slice(0,10);t.setDate(t.getDate()-68);document.getElementById('due').value=t.toISOString().slice(0,10);run();})();
+</script>
+</body>
+</html>
