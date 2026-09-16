@@ -1,6 +1,6 @@
 # NEXT BEST ACTION — 16 Sep 2026
 
-Status: still zero Whop payments. Production /usloviya says Whop (not Paddle). Keep pointing Facebook at стокова.
+still zero payments, keep pointing Facebook at stokova.
 
 Owner time today: paste the post below. Nothing else.
 
