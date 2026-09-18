@@ -1,8 +1,10 @@
-# NEXT BEST ACTION — 17 Sep 2026
+# NEXT BEST ACTION — 18 Sep 2026
 
-First stranger payment landed. Keep pointing Facebook at stokova. Do not add features.
+still zero new payments since pay_Uif9NAUxhrFH56, keep pointing Facebook at stokova.
 
-KPI: pay_Uif9NAUxhrFH56 — 4.99 EUR inclusive, Касов пакет, paid 16 Sep 2026 18:47 EEST. Buyer office@soley-bg.com (Шумен), not founder.
+KPI unchanged: 4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST, office@soley-bg.com (Шумен). No second stranger payment.
+
+Stokova + usloviya load. Checkout is not Paddle. Изтегли чернова present. No new forum blank-template ask.
 
 Owner time today: same Facebook paste. Nothing else.
 
