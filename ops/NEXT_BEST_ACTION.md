@@ -1,19 +1,19 @@
-# NEXT BEST ACTION — 22 Sep 2026
+# NEXT BEST ACTION — 23 Sep 2026
 
-still zero payments, keep pointing Facebook at stokova.
+still zero new payments, keep pointing Facebook at stokova.
 
 KPI unchanged: only pay_Uif9NAUxhrFH56 (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). No second stranger payment.
 
-Stokova + usloviya load. Checkout is Whop not Paddle. Изтегли чернова present. No new forum blank-template ask.
+Usloviya is Whop, not Paddle. Stokova / RKO / PKO load under /documents/. Изтегли чернова present. Root slugs /stokova-razpiska etc. still 404 until Vercel picks up vercel.json redirects pushed to prima16-docs-toolkit main today.
 
-Owner time today: same Facebook paste. Nothing else.
+Owner time today: same Facebook paste. Nothing else. Do not start BoardNight. Do not create a second Vercel project.
 
 ---
 
 ## Facebook / X — paste as-is (BG)
 
-Стокова разписка и касов ордер в евро, без Word бланка.
+Касов ордер и стокова разписка в евро — без Word бланка.
 
-Попълвате в браузъра: страни, артикули, сума словом. PDF готов за подпис. Не е фактура с ДДС.
+Попълвате в браузъра: страни, сума словом, артикули. PDF готов за подпис. Не е фактура с ДДС.
 
 Чернова безплатно: https://docs.prima16.com/documents/stokova-razpiska
