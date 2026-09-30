@@ -1,6 +1,6 @@
-# NEXT BEST ACTION — 30 Sep 2026 09:35 EEST
+# NEXT BEST ACTION — 30 Sep 2026 12:20 EEST
 
-still zero new payments, keep pointing Facebook at stokova.
+still zero payments, keep pointing Facebook at stokova.
 
 KPI unchanged: only pay_Uif9NAUxhrFH56 (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). No second stranger payment.
 
