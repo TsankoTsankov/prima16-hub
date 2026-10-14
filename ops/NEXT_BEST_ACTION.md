@@ -1,4 +1,4 @@
-# NEXT BEST ACTION — 13 Oct 2026 12:20 EEST
+# NEXT BEST ACTION — 14 Oct 2026 09:35 EEST
 
 still zero payments, keep pointing Facebook at stokova.
 
@@ -12,8 +12,8 @@ Owner time today: same Facebook paste. Nothing else. Do not start BoardNight. Do
 
 ## Facebook / X — paste as-is (BG)
 
-Стокова разписка в евро — количествата се смятат сами.
+Касов ордер в евро — сумата с думи се пише сама.
 
-Попълвате артикулите в браузъра. Не е фактура. Чернова безплатно, чист PDF е 1,99 €.
+Попълвате от телефона. Не е фактура. Чернова безплатно, чист PDF е 1,99 €.
 
-https://docs.prima16.com/documents/stokova-razpiska
+https://docs.prima16.com/documents/razhoden-kasov-order
