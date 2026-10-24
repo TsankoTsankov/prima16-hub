@@ -1,4 +1,4 @@
-# NEXT BEST ACTION — 23 Oct 2026 12:15 EEST
+# NEXT BEST ACTION — 24 Oct 2026 12:15 EEST
 
 still zero payments, keep pointing Facebook at stokova.
 
