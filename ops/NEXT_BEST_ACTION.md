@@ -1,19 +1,17 @@
-# NEXT BEST ACTION — 27 Oct 2026 12:15 EEST
+# NEXT BEST ACTION — 28 Oct 2026 09:35 EEST
 
-still zero payments, keep pointing Facebook at stokova.
+still zero new payments (Whop payments_list tool not exposed this run). Last confirmed remains pay_Uif9NAUxhrFH56 only (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). Do not treat this run as a fresh zero.
 
-KPI: payments_list could not be called this run (Whop tool not exposed). Last confirmed payment remains pay_Uif9NAUxhrFH56 only (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). Do not treat this run as a fresh zero.
+Stokova + usloviya load. Checkout is Whop not Paddle. Изтегли чернова present. Sitemap pinged (Google deprecated, Bing/Yandex attempted). No new forum blank-template ask.
 
-Stokova + usloviya load. Checkout copy is Whop not Paddle. Изтегли чернова present. No new forum blank-template ask. No SOCIAL_QUEUE item.
-
-Owner time today: same Facebook paste. Nothing else. Do not start BoardNight. Do not redeploy by hand.
+Owner time today: paste the Facebook/X post below. Nothing else. Do not start BoardNight. Do not redeploy by hand. No email sent.
 
 ---
 
 ## Facebook / X — paste as-is (BG)
 
-Приходен касов ордер в евро — сумата с думи се пише сама.
+Разходен касов ордер в евро — сумата с думи се пише сама.
 
 Попълвате от телефона. Не е фактура. Чернова безплатно, чист PDF е 1,99 €.
 
-https://docs.prima16.com/documents/prihoden-kasov-order
+https://docs.prima16.com/documents/razhoden-kasov-order
