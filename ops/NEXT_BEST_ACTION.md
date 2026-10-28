@@ -1,8 +1,10 @@
-# NEXT BEST ACTION — 28 Oct 2026 09:35 EEST
+# NEXT BEST ACTION — 28 Oct 2026 12:15 EEST
 
-still zero new payments (Whop payments_list tool not exposed this run). Last confirmed remains pay_Uif9NAUxhrFH56 only (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). Do not treat this run as a fresh zero.
+still zero payments, keep pointing Facebook at stokova.
 
-Stokova + usloviya load. Checkout is Whop not Paddle. Изтегли чернова present. Sitemap pinged (Google deprecated, Bing/Yandex attempted). No new forum blank-template ask.
+Whop payments_list tool not exposed this run, so ledger not reconfirmed. Last confirmed remains pay_Uif9NAUxhrFH56 only (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). Do not treat this run as a fresh zero.
+
+Stokova + usloviya load. Checkout is Whop not Paddle. Изтегли чернова present. No new forum blank-template ask.
 
 Owner time today: paste the Facebook/X post below. Nothing else. Do not start BoardNight. Do not redeploy by hand. No email sent.
 
