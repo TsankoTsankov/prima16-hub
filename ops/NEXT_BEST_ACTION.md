@@ -1,10 +1,10 @@
-# NEXT BEST ACTION — 17 Nov 2026 12:22 EET
+# NEXT BEST ACTION — 18 Nov 2026 09:35 EET
 
-still zero payments, keep pointing Facebook at stokova.
+still zero new payments (ledger not reconfirmed this run). Keep pointing Facebook at stokova or cash orders.
 
 Whop payments_list tool not exposed, so no fresh list. Last confirmed remains pay_Uif9NAUxhrFH56 only (4.99 EUR Касов пакет, 16 Sep 2026 18:47 EEST). Do not treat this run as a fresh zero.
 
-Stokova + usloviya load. Checkout is Whop (not Paddle). Изтегли чернова present. No new forum blank-template ask.
+Usloviya says Whop (not Paddle). Stokova + cash orders + delivery-note + nadcenka load; checkout Whop. Sitemap requested; Google ping 404 (deprecated), Bing 410, Yandex 200. No new forum blank-template ask.
 
 Owner time today: paste the Facebook/X post below. Nothing else. Do not start BoardNight. No email.
 
@@ -12,8 +12,8 @@ Owner time today: paste the Facebook/X post below. Nothing else. Do not start Bo
 
 ## Facebook / X — paste as-is (BG)
 
-Стокова разписка онлайн — попълвате артикулите, сумите се смятат в евро, PDF за подпис.
+Касови ордери в евро — приходен и разходен. Попълвате онлайн, сумата се изписва словом автоматично, PDF за подпис.
 
-Чернова безплатно. Чист файл за клиент — 1,99 €. Касов пакет 4,99 €.
+Чернова безплатно. Чист файл — 1,99 €. Касов пакет 4,99 €.
 
-https://docs.prima16.com/documents/stokova-razpiska
+https://docs.prima16.com/documents/prihoden-kasov-order
